@@ -1,0 +1,9 @@
+{
+  "entryPoints": ["app"],
+  "entryPointStrategy": "expand",
+  "out": "docs",
+  "tsconfig": "tsconfig.json",
+  "exclude": ["**/*.test.*", "build/**", "node_modules/**"],
+  "excludePrivate": true,
+  "includeVersion": true
+}

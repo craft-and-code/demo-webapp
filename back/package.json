@@ -1,0 +1,24 @@
+{
+  "name": "api-pdl",
+  "version": "1.0.0",
+  "description": "API HTTP REST en Node.js pour exposer les Points de Livraison (PDL)",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test src/tests/**/*.test.js"
+  },
+  "keywords": [
+    "pdl",
+    "api",
+    "node",
+    "express"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}

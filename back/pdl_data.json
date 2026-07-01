@@ -1,0 +1,352 @@
+[
+  {
+    "pdl": "10433218196001",
+    "nom": "Martin",
+    "prenom": "Alice",
+    "ville": "Strasbourg",
+    "consommation_kwh": 8423
+  },
+  {
+    "pdl": "89083863794026",
+    "nom": "Bernard",
+    "prenom": "Bruno",
+    "ville": "Rennes",
+    "consommation_kwh": 9905
+  },
+  {
+    "pdl": "23511615594078",
+    "nom": "Dubois",
+    "prenom": "Clara",
+    "ville": "Toulouse",
+    "consommation_kwh": 13203
+  },
+  {
+    "pdl": "18495931034131",
+    "nom": "Thomas",
+    "prenom": "David",
+    "ville": "Le Havre",
+    "consommation_kwh": 9908
+  },
+  {
+    "pdl": "75255341928327",
+    "nom": "Robert",
+    "prenom": "Emma",
+    "ville": "Le Havre",
+    "consommation_kwh": 9645
+  },
+  {
+    "pdl": "83503056413953",
+    "nom": "Richard",
+    "prenom": "François",
+    "ville": "Le Mans",
+    "consommation_kwh": 17158
+  },
+  {
+    "pdl": "67242388496965",
+    "nom": "Petit",
+    "prenom": "Gabrielle",
+    "ville": "Montpellier",
+    "consommation_kwh": 5332
+  },
+  {
+    "pdl": "87101226916697",
+    "nom": "Durand",
+    "prenom": "Hugo",
+    "ville": "Dijon",
+    "consommation_kwh": 9038
+  },
+  {
+    "pdl": "80184514627048",
+    "nom": "Leroy",
+    "prenom": "Inès",
+    "ville": "Tours",
+    "consommation_kwh": 6654
+  },
+  {
+    "pdl": "81489325288095",
+    "nom": "Moreau",
+    "prenom": "Julien",
+    "ville": "Grenoble",
+    "consommation_kwh": 1438
+  },
+  {
+    "pdl": "15430391171822",
+    "nom": "Simon",
+    "prenom": "Karine",
+    "ville": "Aix-en-Provence",
+    "consommation_kwh": 16374
+  },
+  {
+    "pdl": "82489638346578",
+    "nom": "Laurent",
+    "prenom": "Luc",
+    "ville": "Toulon",
+    "consommation_kwh": 4765
+  },
+  {
+    "pdl": "33150983930103",
+    "nom": "Lefebvre",
+    "prenom": "Marie",
+    "ville": "Marseille",
+    "consommation_kwh": 1829
+  },
+  {
+    "pdl": "51834738299737",
+    "nom": "Michel",
+    "prenom": "Nicolas",
+    "ville": "Amiens",
+    "consommation_kwh": 14138
+  },
+  {
+    "pdl": "31165667010651",
+    "nom": "Garcia",
+    "prenom": "Océane",
+    "ville": "Montpellier",
+    "consommation_kwh": 7078
+  },
+  {
+    "pdl": "38726247317810",
+    "nom": "David",
+    "prenom": "Pierre",
+    "ville": "Le Mans",
+    "consommation_kwh": 1283
+  },
+  {
+    "pdl": "13267736026064",
+    "nom": "Bertrand",
+    "prenom": "Quentin",
+    "ville": "Boulogne-Billancourt",
+    "consommation_kwh": 15709
+  },
+  {
+    "pdl": "46872343098050",
+    "nom": "Roux",
+    "prenom": "Rachel",
+    "ville": "Lyon",
+    "consommation_kwh": 16423
+  },
+  {
+    "pdl": "88208121913619",
+    "nom": "Vincent",
+    "prenom": "Samuel",
+    "ville": "Montpellier",
+    "consommation_kwh": 2102
+  },
+  {
+    "pdl": "91699854353462",
+    "nom": "Fournier",
+    "prenom": "Théo",
+    "ville": "Aix-en-Provence",
+    "consommation_kwh": 10630
+  },
+  {
+    "pdl": "75107991183842",
+    "nom": "Morel",
+    "prenom": "Ursula",
+    "ville": "Boulogne-Billancourt",
+    "consommation_kwh": 12236
+  },
+  {
+    "pdl": "13542784980841",
+    "nom": "Girard",
+    "prenom": "Vincent",
+    "ville": "Perpignan",
+    "consommation_kwh": 5200
+  },
+  {
+    "pdl": "41182449353487",
+    "nom": "André",
+    "prenom": "Wendy",
+    "ville": "Bordeaux",
+    "consommation_kwh": 2464
+  },
+  {
+    "pdl": "16400524278680",
+    "nom": "Lefèvre",
+    "prenom": "Xavier",
+    "ville": "Toulouse",
+    "consommation_kwh": 3265
+  },
+  {
+    "pdl": "28059826204505",
+    "nom": "Mercier",
+    "prenom": "Yasmine",
+    "ville": "Strasbourg",
+    "consommation_kwh": 8976
+  },
+  {
+    "pdl": "15869232260256",
+    "nom": "Dupont",
+    "prenom": "Zoé",
+    "ville": "Amiens",
+    "consommation_kwh": 8931
+  },
+  {
+    "pdl": "42160733754330",
+    "nom": "Lambert",
+    "prenom": "Antoine",
+    "ville": "Aix-en-Provence",
+    "consommation_kwh": 7128
+  },
+  {
+    "pdl": "65414586850142",
+    "nom": "Bonnet",
+    "prenom": "Béatrice",
+    "ville": "Nîmes",
+    "consommation_kwh": 9498
+  },
+  {
+    "pdl": "01965569816934",
+    "nom": "François",
+    "prenom": "Cédric",
+    "ville": "Lyon",
+    "consommation_kwh": 15088
+  },
+  {
+    "pdl": "08835615951484",
+    "nom": "Martinez",
+    "prenom": "Diane",
+    "ville": "Aix-en-Provence",
+    "consommation_kwh": 14182
+  },
+  {
+    "pdl": "56482366299468",
+    "nom": "Legrand",
+    "prenom": "Edouard",
+    "ville": "Limoges",
+    "consommation_kwh": 813
+  },
+  {
+    "pdl": "44369957773872",
+    "nom": "Garnier",
+    "prenom": "Fatoumata",
+    "ville": "Aix-en-Provence",
+    "consommation_kwh": 3578
+  },
+  {
+    "pdl": "48951343320037",
+    "nom": "Faure",
+    "prenom": "Guillaume",
+    "ville": "Villeurbanne",
+    "consommation_kwh": 3186
+  },
+  {
+    "pdl": "76936763201632",
+    "nom": "Rousseau",
+    "prenom": "Hélène",
+    "ville": "Amiens",
+    "consommation_kwh": 17772
+  },
+  {
+    "pdl": "70831727889579",
+    "nom": "Blanc",
+    "prenom": "Ivan",
+    "ville": "Limoges",
+    "consommation_kwh": 17340
+  },
+  {
+    "pdl": "68727743487347",
+    "nom": "Guérin",
+    "prenom": "Julie",
+    "ville": "Marseille",
+    "consommation_kwh": 10162
+  },
+  {
+    "pdl": "34558122362316",
+    "nom": "Muller",
+    "prenom": "Kevin",
+    "ville": "Saint-Étienne",
+    "consommation_kwh": 11642
+  },
+  {
+    "pdl": "87603669096705",
+    "nom": "Henry",
+    "prenom": "Laure",
+    "ville": "Lille",
+    "consommation_kwh": 13579
+  },
+  {
+    "pdl": "68893734670656",
+    "nom": "Roussel",
+    "prenom": "Maxime",
+    "ville": "Brest",
+    "consommation_kwh": 6208
+  },
+  {
+    "pdl": "72980699016272",
+    "nom": "Nicolas",
+    "prenom": "Nathalie",
+    "ville": "Lyon",
+    "consommation_kwh": 9324
+  },
+  {
+    "pdl": "65375564641708",
+    "nom": "Perrin",
+    "prenom": "Olivier",
+    "ville": "Lyon",
+    "consommation_kwh": 12267
+  },
+  {
+    "pdl": "31003309232719",
+    "nom": "Morin",
+    "prenom": "Pauline",
+    "ville": "Strasbourg",
+    "consommation_kwh": 16038
+  },
+  {
+    "pdl": "45299124190496",
+    "nom": "Mathieu",
+    "prenom": "Romain",
+    "ville": "Le Havre",
+    "consommation_kwh": 7298
+  },
+  {
+    "pdl": "19314919058651",
+    "nom": "Clément",
+    "prenom": "Sophie",
+    "ville": "Dijon",
+    "consommation_kwh": 11981
+  },
+  {
+    "pdl": "06716572628498",
+    "nom": "Gauthier",
+    "prenom": "Tristan",
+    "ville": "Tours",
+    "consommation_kwh": 16643
+  },
+  {
+    "pdl": "76945314737996",
+    "nom": "Fontaine",
+    "prenom": "Valérie",
+    "ville": "Rennes",
+    "consommation_kwh": 1740
+  },
+  {
+    "pdl": "75273545494808",
+    "nom": "Chevalier",
+    "prenom": "William",
+    "ville": "Strasbourg",
+    "consommation_kwh": 3605
+  },
+  {
+    "pdl": "36783777014363",
+    "nom": "Robin",
+    "prenom": "Axelle",
+    "ville": "Lille",
+    "consommation_kwh": 12892
+  },
+  {
+    "pdl": "78856855744431",
+    "nom": "Masson",
+    "prenom": "Baptiste",
+    "ville": "Brest",
+    "consommation_kwh": 7110
+  },
+  {
+    "pdl": "51823374989413",
+    "nom": "Schmitt",
+    "prenom": "Céline",
+    "ville": "Lille",
+    "consommation_kwh": 8254
+  }
+]
