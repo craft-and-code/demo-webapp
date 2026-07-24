@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate, Link } from "react-router";
+import { ArrowLeft, MapPin } from "lucide-react";
 
 import { usePdlDetail } from "../hooks/usePdl";
 
@@ -104,20 +105,11 @@ export default function PdlDetail() {
             to="/"
             className="group inline-flex items-center gap-2 rounded-xl dark:bg-gray-900/60 border border-gray-800/80 px-4 py-2 text-sm font-semibold text-gray-400 dark:text-gray-300 hover:bg-gray-900 hover:text-cyan-400 hover:border-cyan-500/20 transition-all duration-200"
           >
-            <svg
+            <ArrowLeft
               className="h-4 w-4 transform transition-transform group-hover:-translate-x-1 duration-200"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth="2.5"
+              strokeWidth={2.5}
               aria-hidden="true"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M10 19l-7-7m0 0l7-7m-7 7h18"
-              />
-            </svg>
+            />
             Retour à la liste
           </Link>
         </div>
@@ -178,25 +170,10 @@ export default function PdlDetail() {
 
                     {/* Localisation */}
                     <div className="pt-2 flex items-center justify-center sm:justify-start gap-1 text-sm text-gray-300">
-                      <svg
+                      <MapPin
                         className="h-4.5 w-4.5 dark:text-gray-500"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth="2.0"
                         aria-hidden="true"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                        />
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                        />
-                      </svg>
+                      />
                       <span>
                         Installé à{" "}
                         <strong className="text-slate-800 dark:text-white">

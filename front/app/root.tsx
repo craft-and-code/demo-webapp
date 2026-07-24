@@ -20,6 +20,7 @@ import "./app.css";
  */
 export const links: Route.LinksFunction = () => [
   { rel: "icon", type: "image/png", href: "/favicon.png" },
+  { rel: "apple-touch-icon", href: "/favicon.png" },
   {
     rel: "preload",
     href: "/fonts/inter-latin-wght-normal.woff2",

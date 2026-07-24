@@ -4,9 +4,11 @@ This repository hosts a small full-stack application built around a clean client
 
 The goal is a compact yet production-minded showcase: clear separation of concerns, a fully typed frontend, self-hosted assets, and deliberate attention to accessibility and performance rather than raw feature count.
 
+> ℹ️ **Scope & context** — This project was produced as a time-boxed technical exercise, deliberately focused on the **frontend**. The backend is intentionally kept minimal: it essentially serves a provided JSON dataset and is **not** meant to reflect a real production backend. Most of the effort — architecture, typing, UX, accessibility and performance — went into the `/front` side.
+
 ## 🧱 Tech Stack
 
-- **Frontend** — React 19, React Router 7 (SSR enabled), TypeScript, Tailwind CSS v4, Vite 8. Documentation generated with TypeDoc, linting via ESLint. Inter is self-hosted (variable `woff2`), with no dependency on Google Fonts.
+- **Frontend** — React 19, React Router 7 (SSR enabled), TypeScript, Tailwind CSS v4, Vite 8. Icons via `lucide-react`. Documentation generated with TypeDoc, linting via ESLint. Inter is self-hosted (variable `woff2`), with no dependency on Google Fonts.
 - **Backend** — Node.js (ESM), Express 4, `dotenv`, tested with the native `node:test` runner. Layered architecture: `routes → controllers → services → middlewares`.
 
 ## 📁 Project Structure
@@ -45,7 +47,6 @@ The repository is organized as follows:
 
 While the project is fully functional as a showcase, here are the targeted areas for improvement for a large-scale production deployment:
 
-- **Icon Optimization**: Replace hardcoded inline SVG tags with reusable icon files (SVG format or via an icon library). This will lighten the source code, simplify maintenance, and make it easier to share the design system across other applications.
 - **Homepage Pagination**: To prevent infinite scrolling on the home page as the volume of JSON data grows, implementing a pagination system (navigation bar with page numbers 1, 2, 3...) is highly recommended.
 - **Display Configuration**: In conjunction with pagination, add a selector allowing the user to choose the maximum number of items displayed per page (e.g., 50, 100, or 500 items).
 
@@ -61,9 +62,11 @@ Ce dépôt héberge une application _full-stack_ construite autour d'une archite
 
 L'objectif est une vitrine compacte mais pensée pour la production : séparation nette des responsabilités, _frontend_ entièrement typé, ressources auto-hébergées et une attention délibérée à l'accessibilité et à la performance plutôt qu'à l'accumulation de fonctionnalités.
 
+> ℹ️ **Périmètre & contexte** — Ce projet a été réalisé dans le cadre d'un exercice technique limité dans le temps, volontairement centré sur le **frontend**. Le backend est intentionnellement réduit au minimum : il se contente essentiellement de livrer un jeu de données JSON fourni et **ne** prétend **pas** refléter un backend de production. L'essentiel du travail — architecture, typage, UX, accessibilité et performance — porte sur la partie `/front`.
+
 ## 🧱 Stack technique
 
-- **Frontend** — React 19, React Router 7 (rendu côté serveur activé), TypeScript, Tailwind CSS v4, Vite 8. Documentation générée avec TypeDoc, _linting_ via ESLint. La police Inter est auto-hébergée (variable `woff2`), sans aucune dépendance à Google Fonts.
+- **Frontend** — React 19, React Router 7 (rendu côté serveur activé), TypeScript, Tailwind CSS v4, Vite 8. Icônes via `lucide-react`. Documentation générée avec TypeDoc, _linting_ via ESLint. La police Inter est auto-hébergée (variable `woff2`), sans aucune dépendance à Google Fonts.
 - **Backend** — Node.js (ESM), Express 4, `dotenv`, testé avec le _runner_ natif `node:test`. Architecture en couches : `routes → controllers → services → middlewares`.
 
 ## 📁 Structure du Projet
@@ -102,7 +105,6 @@ Le dépôt est organisé de la manière suivante :
 
 Bien que le projet soit pleinement fonctionnel comme vitrine, voici les axes d'amélioration envisagés pour une mise en production ou un projet à plus grande échelle :
 
-- **Optimisation des icônes** : remplacer les balises SVG actuellement intégrées "en dur" dans le code par de vrais fichiers d'icônes réutilisables (au format SVG ou via une bibliothèque d'icônes). Cela permet d'alléger le code source et de faciliter la maintenance ou le partage avec d'autres applications de la charte graphique.
 - **Pagination de la page d'accueil** : pour éviter une liste infinie sur la page HOME si le volume de données JSON augmente, l'implémentation d'un système de pagination (barre de navigation avec les numéros de pages 1, 2, 3...) est fortement recommandée.
 - **Configuration de l'affichage** : en lien avec la pagination, ajouter un sélecteur permettant à l'utilisateur de choisir le nombre maximum d'éléments à afficher par page (par exemple : 50, 100 ou 500 éléments).
 
