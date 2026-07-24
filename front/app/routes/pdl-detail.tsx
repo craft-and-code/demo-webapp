@@ -94,7 +94,7 @@ export default function PdlDetail() {
   const stats = pdlData ? getConsumptionStats(pdlData.consommation_kwh) : null;
 
   return (
-    <div className="min-h-screen dark:bg-slate-950 text-slate-100 font-sans pb-16">
+    <div className="min-h-screen dark:bg-slate-950 text-slate-900 dark:text-slate-100 font-sans pb-16">
       <Navbar />
 
       <main className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 mt-10">
@@ -110,6 +110,7 @@ export default function PdlDetail() {
               viewBox="0 0 24 24"
               stroke="currentColor"
               strokeWidth="2.5"
+              aria-hidden="true"
             >
               <path
                 strokeLinecap="round"
@@ -123,7 +124,11 @@ export default function PdlDetail() {
 
         {loading ? (
           /* Squelette de Chargement du Détail */
-          <div className="animate-pulse space-y-6">
+          <div
+            className="animate-pulse space-y-6"
+            aria-busy="true"
+            aria-label="Chargement du point de livraison"
+          >
             <div className="rounded-3xl border border-gray-800 dark:bg-gray-900/30 p-8 flex flex-col items-center">
               <div className="h-16 w-16 rounded-2xl bg-gray-800 mb-4"></div>
               <div className="h-6 w-48 rounded bg-gray-800 mb-3"></div>
@@ -148,7 +153,9 @@ export default function PdlDetail() {
                   {/* Icone PDL style "Compteur Linky" */}
                   <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-tr from-primary to-secondary p-0.5 shadow-lg shadow-primary/20">
                     <div className="flex h-full w-full items-center justify-center rounded-2xl bg-white dark:bg-slate-950">
-                      <span className="text-2xl">📈</span>
+                      <span className="text-2xl" aria-hidden="true">
+                        📈
+                      </span>
                     </div>
                   </div>
 
@@ -177,6 +184,7 @@ export default function PdlDetail() {
                         viewBox="0 0 24 24"
                         stroke="currentColor"
                         strokeWidth="2.0"
+                        aria-hidden="true"
                       >
                         <path
                           strokeLinecap="round"
@@ -208,7 +216,14 @@ export default function PdlDetail() {
 
                 <div className="space-y-3">
                   {/* Barre de Progression Graphique */}
-                  <div className="relative h-4 w-full overflow-hidden rounded-full dark:bg-gray-950 p-0.5">
+                  <div
+                    className="relative h-4 w-full overflow-hidden rounded-full dark:bg-gray-950 p-0.5"
+                    role="progressbar"
+                    aria-valuemin={0}
+                    aria-valuemax={20000}
+                    aria-valuenow={pdlData.consommation_kwh}
+                    aria-valuetext={`${pdlData.consommation_kwh.toLocaleString()} kWh sur 20 000 kWh — ${stats.levelLabel}`}
+                  >
                     <div
                       className={`h-full rounded-full transition-all duration-1000 ${stats.barColor}`}
                       style={{ width: `${stats.percentage}%` }}

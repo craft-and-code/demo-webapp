@@ -60,7 +60,7 @@ export default function Home() {
   }, [pdls, searchQuery]);
 
   return (
-    <div className="min-h-screen dark:bg-slate-950 text-slate-100 font-sans pb-16">
+    <div className="min-h-screen dark:bg-slate-950 text-slate-900 dark:text-slate-100 font-sans pb-16">
       <Navbar />
 
       <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-10">
@@ -87,6 +87,9 @@ export default function Home() {
 
         {/* Barre de Recherche Dynamique */}
         <div className="relative mb-8 max-w-xl mx-auto sm:mx-0">
+          <label htmlFor="pdl-search" className="sr-only">
+            Rechercher un point de livraison par nom, prénom, ville ou numéro PDL
+          </label>
           <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
             <svg
               className="h-5 w-5 text-gray-500"
@@ -94,6 +97,7 @@ export default function Home() {
               viewBox="0 0 24 24"
               stroke="currentColor"
               strokeWidth="2.0"
+              aria-hidden="true"
             >
               <path
                 strokeLinecap="round"
@@ -103,20 +107,26 @@ export default function Home() {
             </svg>
           </div>
           <input
-            type="text"
+            id="pdl-search"
+            type="search"
             placeholder="Rechercher par nom, prénom, ville ou PDL..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="block w-full rounded-xl border border-gray-600 dark:bg-gray-900/60 py-3 pl-10 pr-4 text-sm text-gray-400 dark:text-white placeholder-gray-500 shadow-inner focus:border-blue-400/50 focus:bg-gray-200 dark:focus:bg-gray-900 focus:outline-none focus:ring-1 focus:ring-cyan-500/50 transition-all duration-200"
+            className="block w-full rounded-xl border border-gray-400 dark:border-gray-600 dark:bg-gray-900/60 py-3 pl-10 pr-4 text-sm text-gray-900 dark:text-white placeholder-gray-500 shadow-inner focus:border-blue-400/50 focus:bg-gray-200 dark:focus:bg-gray-900 focus:outline-none focus:ring-1 focus:ring-cyan-500/50 transition-all duration-200"
           />
         </div>
 
         {/* Affichage des Squelettes lors du Chargement */}
         {loading ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+            aria-busy="true"
+            aria-label="Chargement des points de livraison"
+          >
             {Array.from({ length: 8 }).map((_, idx) => (
               <div
                 key={idx}
+                aria-hidden="true"
                 className="animate-pulse rounded-2xl border border-gray-800/80 bg-gray-900/30 p-6 flex flex-col items-center"
               >
                 <div className="h-14 w-14 rounded-full bg-gray-800 mb-4"></div>
@@ -136,6 +146,7 @@ export default function Home() {
                 viewBox="0 0 24 24"
                 stroke="currentColor"
                 strokeWidth="1.5"
+                aria-hidden="true"
               >
                 <path
                   strokeLinecap="round"
@@ -170,6 +181,7 @@ export default function Home() {
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                     strokeWidth="1.5"
+                    aria-hidden="true"
                   >
                     <path
                       strokeLinecap="round"

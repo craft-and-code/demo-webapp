@@ -11,21 +11,21 @@ import type { Route } from "./+types/root";
 import "./app.css";
 
 /**
- * Fournit les liens vers les ressources externes (polices, icônes, feuilles de style).
- * 
+ * Fournit les liens vers les ressources (favicon, polices auto-hébergées).
+ * Les polices Inter sont servies en local (voir app.css et public/fonts) :
+ * plus aucune dépendance à Google Fonts. On précharge le fichier « normal »
+ * (le plus utilisé) pour éviter tout FOUT au premier rendu.
+ *
  * @returns {Route.LinksFunction} Un tableau de configurations de liens pour le composant racine.
  */
 export const links: Route.LinksFunction = () => [
   { rel: "icon", type: "image/png", href: "/favicon.png" },
-  { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
-    rel: "preconnect",
-    href: "https://fonts.gstatic.com",
+    rel: "preload",
+    href: "/fonts/inter-latin-wght-normal.woff2",
+    as: "font",
+    type: "font/woff2",
     crossOrigin: "anonymous",
-  },
-  {
-    rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
   },
 ];
 
@@ -39,7 +39,7 @@ export const links: Route.LinksFunction = () => [
  */
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -73,15 +73,15 @@ export default function App() {
  * @returns {React.ReactElement} Le composant affichant les détails de l'erreur.
  */
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
-  let message = "Oops!";
-  let details = "An unexpected error occurred.";
+  let message = "Oups !";
+  let details = "Une erreur inattendue s'est produite.";
   let stack: string | undefined;
 
   if (isRouteErrorResponse(error)) {
-    message = error.status === 404 ? "404" : "Error";
+    message = error.status === 404 ? "404" : "Erreur";
     details =
       error.status === 404
-        ? "The requested page could not be found."
+        ? "La page demandée est introuvable."
         : error.statusText || details;
   } else if (import.meta.env.DEV && error && error instanceof Error) {
     details = error.message;

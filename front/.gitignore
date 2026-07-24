@@ -5,3 +5,6 @@
 # React Router
 /.react-router/
 /build/
+
+# Polices auto-hébergées (récupérées via `npm run fetch-fonts`)
+/public/fonts/*.woff2

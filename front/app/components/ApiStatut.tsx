@@ -3,7 +3,7 @@ import type { ApiStatutProps } from "../types/components";
 /**
  * Composant de badge de statut de l'API avec pulsation de couleur.
  * Affiche un badge indiquant si l'API est en ligne, hors ligne ou en cours de vérification.
- * 
+ *
  * @param props - Les propriétés du composant ApiStatut.
  * @param props.statuts - L'état actuel de l'API ("online", "offline", "checking").
  * @returns {React.ReactElement} Le composant ApiStatut.
@@ -11,6 +11,8 @@ import type { ApiStatutProps } from "../types/components";
 export function ApiStatut({ statuts }: ApiStatutProps) {
   return (
     <div
+      role="status"
+      aria-live="polite"
       className={`inline-flex items-center gap-2 rounded-full border px-3 py-1 text-xs font-semibold backdrop-blur-sm transition-all duration-300 ${
         statuts === "online"
           ? "border-emerald-500/20 bg-emerald-500/5 text-emerald-600 dark:text-emerald-400"
@@ -19,7 +21,7 @@ export function ApiStatut({ statuts }: ApiStatutProps) {
             : "border-slate-200 dark:border-gray-800 bg-slate-100 dark:bg-gray-900/50 text-slate-500 dark:text-gray-400"
       }`}
     >
-      <span className="relative flex h-2 w-2">
+      <span className="relative flex h-2 w-2" aria-hidden="true">
         {statuts === "online" && (
           <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
         )}

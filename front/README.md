@@ -24,6 +24,12 @@ Install the dependencies:
 npm install
 ```
 
+Récupérer les polices Inter auto-hébergées (une fois, nécessite un accès réseau) :
+
+```bash
+npm run fetch-fonts
+```
+
 ### Development
 
 Start the development server with HMR:

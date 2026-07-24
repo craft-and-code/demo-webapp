@@ -56,7 +56,10 @@ export function SwitchMode() {
     <button
       onClick={toggleTheme}
       type="button"
-      aria-label="Basculer le thème de couleur"
+      aria-label={
+        theme === "dark" ? "Passer au thème clair" : "Passer au thème sombre"
+      }
+      aria-pressed={theme === "dark"}
       className="flex h-9 w-9 items-center justify-center rounded-xl border border-slate-200 dark:border-gray-800 bg-slate-50 dark:bg-gray-900 text-slate-700 dark:text-amber-400 shadow-sm hover:bg-slate-100 dark:hover:bg-gray-850 hover:border-slate-300 dark:hover:border-gray-700 hover:scale-105 active:scale-95 transition-all duration-200"
     >
       {theme === "dark" ? (
@@ -67,6 +70,7 @@ export function SwitchMode() {
           viewBox="0 0 24 24"
           stroke="currentColor"
           strokeWidth="2.0"
+          aria-hidden="true"
         >
           <path
             strokeLinecap="round"
@@ -82,6 +86,7 @@ export function SwitchMode() {
           viewBox="0 0 24 24"
           stroke="currentColor"
           strokeWidth="2.0"
+          aria-hidden="true"
         >
           <path
             strokeLinecap="round"
